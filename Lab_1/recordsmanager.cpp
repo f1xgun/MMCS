@@ -98,7 +98,6 @@ int RecordsManager::decrypt_file(const QByteArray& key_hex, const QByteArray & e
             EVP_CIPHER_CTX_free(ctx);
             return -1;
         }
-        QByteArray tmp_buf(reinterpret_cast<char*>(decrypted_buf), decr_len);
         decrypted_buffer.write(reinterpret_cast<char*>(decrypted_buf), decr_len);
         encr_len = encrypted_stream.readRawData(reinterpret_cast<char*>(encrypted_buf), BUF_LEN);
     }
