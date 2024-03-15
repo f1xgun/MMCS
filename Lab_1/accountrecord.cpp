@@ -16,3 +16,11 @@ std::string AccountRecord::get_login() {
 std::string AccountRecord::get_password() {
     return this->password;
 }
+
+void AccountRecord::set_login(std::string &login) {
+    this->login = login;
+}
+
+void AccountRecord::set_password(std::string &password) {
+    this->password = password;
+}

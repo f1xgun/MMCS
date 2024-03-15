@@ -17,19 +17,17 @@ set(PROJECT_SOURCES
         accountrecord.cpp
         createrecorddialog.cpp
         homewindow.cpp
-        main.cpp
-        mainwindow.cpp
+
         recordsmanager.cpp
         recordwidget.cpp
         accountrecord.h
         createrecorddialog.h
         homewindow.h
-        mainwindow.h
+
         recordsmanager.h
         recordwidget.h
         createrecorddialog.ui
         homewindow.ui
-        mainwindow.ui
         recordwidget.ui
 )
 
@@ -37,7 +35,7 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(Lab_1
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
-        checkpassword.h checkpassword.cpp checkpassword.ui
+
     )
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET Lab_1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR

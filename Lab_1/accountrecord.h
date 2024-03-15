@@ -18,6 +18,10 @@ public:
     std::string get_login();
 
     std::string get_password();
+
+    void set_login(std::string &login);
+
+    void set_password(std::string &password);
 };
 
 #endif // ACCOUNTRECORD_H
