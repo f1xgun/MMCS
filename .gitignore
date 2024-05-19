@@ -1,2 +1,5 @@
 build*/
 *.user
+.idea/
+.vs/
+x64/
