@@ -1,1 +1,7 @@
 build*/
+Debug/
+Simulation/
+x64/
+Release/
+packages/
+.vs/
